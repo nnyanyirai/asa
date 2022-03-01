@@ -1,7 +1,10 @@
 package asa.com.bankbalanceanddispensingsystem.controller.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.ClientAccount;
+import asa.com.bankbalanceanddispensingsystem.models.client.ClientAccount;
+import asa.com.bankbalanceanddispensingsystem.models.dto.DisplayCurrencyAccountsDto;
+import asa.com.bankbalanceanddispensingsystem.models.dto.DisplayTransactionalBalancesDto;
 import asa.com.bankbalanceanddispensingsystem.service.client.ClientAccountService;
+import java.util.List;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,8 +35,12 @@ private ClientAccountService clientAccountService;
     return clientAccountService.getAllClientsAccounts();
   }
   @GetMapping("api/v1/getClientAccountById/{id}")
-  public ClientAccount getClientAccountById(@PathVariable Integer id){
+  public List<DisplayTransactionalBalancesDto> getClientAccountById(@PathVariable Integer id){
   return clientAccountService.getClientAccountsById(id);
+  }
+  @GetMapping("api/v1/getClientCurrencyAccountById/{id}")
+  public List<DisplayCurrencyAccountsDto> getClientCurrencyAccountById(@PathVariable Integer id){
+    return clientAccountService.getClientCurrencyAccountsById(id);
   }
   @DeleteMapping("api/v1/deleteClientAccount/{id}")
   public  void deleteClientAccount(@PathVariable Integer id){

@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.ClientSubType;
+import asa.com.bankbalanceanddispensingsystem.models.client.ClientSubType;
 
 public interface ClientSubTypeService {
     ClientSubType createClientSubType (ClientSubType clientSubType);

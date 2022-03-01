@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.client.impl;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.Client;
+import asa.com.bankbalanceanddispensingsystem.models.client.Client;
 import asa.com.bankbalanceanddispensingsystem.repository.client.ClientRepository;
 import asa.com.bankbalanceanddispensingsystem.service.client.ClientService;
 import javax.transaction.Transactional;

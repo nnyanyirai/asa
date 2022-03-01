@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.controller.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.Client;
+import asa.com.bankbalanceanddispensingsystem.models.client.Client;
 import asa.com.bankbalanceanddispensingsystem.service.client.ClientService;
 import org.springframework.web.bind.annotation.*;
 

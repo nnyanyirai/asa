@@ -1,7 +1,9 @@
 package asa.com.bankbalanceanddispensingsystem.repository.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.ClientType;
+import asa.com.bankbalanceanddispensingsystem.models.client.ClientType;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface clientTypeRepository extends JpaRepository<ClientType,String> {
+@Repository
+public interface ClientTypeRepository extends JpaRepository<ClientType,String> {
 }

@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.atm;
 
-import asa.com.bankbalanceanddispensingsystem.model.atm.DenominationType;
+import asa.com.bankbalanceanddispensingsystem.models.atm.DenominationType;
 
 public interface DenominationTypeService {
   DenominationType createDenominationType(DenominationType denominationType);

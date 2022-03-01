@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.controller.atm;
 
-import asa.com.bankbalanceanddispensingsystem.model.atm.Atm;
+import asa.com.bankbalanceanddispensingsystem.models.atm.Atm;
 import asa.com.bankbalanceanddispensingsystem.service.atm.AtmService;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

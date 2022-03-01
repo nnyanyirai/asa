@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.Client;
+import asa.com.bankbalanceanddispensingsystem.models.client.Client;
 
 public interface ClientService {
     Client createClient (Client client);

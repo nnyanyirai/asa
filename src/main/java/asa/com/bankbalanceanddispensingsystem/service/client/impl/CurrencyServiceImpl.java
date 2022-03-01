@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.client.impl;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.Currency;
+import asa.com.bankbalanceanddispensingsystem.models.client.Currency;
 import asa.com.bankbalanceanddispensingsystem.service.client.CurrencyService;
 import javax.transaction.Transactional;
 import org.springframework.stereotype.Service;

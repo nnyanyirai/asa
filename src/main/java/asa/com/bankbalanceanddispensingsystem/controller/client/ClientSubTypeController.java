@@ -1,7 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.controller.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.ClientAccount;
-import asa.com.bankbalanceanddispensingsystem.model.client.ClientSubType;
+import asa.com.bankbalanceanddispensingsystem.models.client.ClientSubType;
 import asa.com.bankbalanceanddispensingsystem.service.client.ClientSubTypeService;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

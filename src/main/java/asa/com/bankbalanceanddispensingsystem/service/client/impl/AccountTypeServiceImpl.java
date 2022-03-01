@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.client.impl;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.AccountType;
+import asa.com.bankbalanceanddispensingsystem.models.client.AccountType;
 import asa.com.bankbalanceanddispensingsystem.service.client.AccountTypeService;
 import javax.transaction.Transactional;
 import org.springframework.stereotype.Service;

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+  "-//Hibernate/Hibernate Configuration DTD//EN"
+  "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/asa_assessment</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.client.AccountType"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.atm.Atm"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.atm.AtmAllocation"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.client.Client"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.client.ClientAccount"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.client.ClientSubType"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.client.ClientType"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.client.CreditCardLimit"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.client.Currency"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.client.CurrencyConversionRate"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.atm.Denomination"/>
+    <mapping class="asa.com.bankbalanceanddispensingsystem.models.atm.DenominationType"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

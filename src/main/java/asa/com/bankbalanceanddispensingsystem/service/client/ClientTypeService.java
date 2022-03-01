@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.ClientType;
+import asa.com.bankbalanceanddispensingsystem.models.client.ClientType;
 
 public interface ClientTypeService {
     ClientType createClientType (ClientType clientType);

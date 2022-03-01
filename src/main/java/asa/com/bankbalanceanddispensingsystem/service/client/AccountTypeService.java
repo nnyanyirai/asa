@@ -1,8 +1,8 @@
 package asa.com.bankbalanceanddispensingsystem.service.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.AccountType;
-import asa.com.bankbalanceanddispensingsystem.model.client.ClientAccount;
-import org.springframework.data.jpa.repository.JpaRepository;
+
+import asa.com.bankbalanceanddispensingsystem.models.client.AccountType;
+
 
 public interface AccountTypeService {
   AccountType createAccountType (AccountType accountType);

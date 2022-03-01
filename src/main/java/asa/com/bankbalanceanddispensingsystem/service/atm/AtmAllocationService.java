@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.atm;
 
-import asa.com.bankbalanceanddispensingsystem.model.atm.AtmAllocation;
+import asa.com.bankbalanceanddispensingsystem.models.atm.AtmAllocation;
 
 public interface AtmAllocationService {
 AtmAllocation createAtmAllocation(AtmAllocation atmAllocation);

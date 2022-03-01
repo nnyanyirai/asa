@@ -1,7 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.controller.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.CreditCardLimit;
-import asa.com.bankbalanceanddispensingsystem.model.client.Currency;
+import asa.com.bankbalanceanddispensingsystem.models.client.Currency;
 import asa.com.bankbalanceanddispensingsystem.service.client.CurrencyService;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

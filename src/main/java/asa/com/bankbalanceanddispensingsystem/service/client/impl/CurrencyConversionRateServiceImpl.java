@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.client.impl;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.CurrencyConversionRate;
+import asa.com.bankbalanceanddispensingsystem.models.client.CurrencyConversionRate;
 import asa.com.bankbalanceanddispensingsystem.service.client.CurrencyConversionRateService;
 import javax.transaction.Transactional;
 import org.springframework.stereotype.Service;

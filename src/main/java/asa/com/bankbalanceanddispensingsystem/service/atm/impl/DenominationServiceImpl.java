@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.atm.impl;
 
-import asa.com.bankbalanceanddispensingsystem.model.atm.Denomination;
+import asa.com.bankbalanceanddispensingsystem.models.atm.Denomination;
 import asa.com.bankbalanceanddispensingsystem.service.atm.DenominationService;
 import javax.transaction.Transactional;
 import org.springframework.stereotype.Service;

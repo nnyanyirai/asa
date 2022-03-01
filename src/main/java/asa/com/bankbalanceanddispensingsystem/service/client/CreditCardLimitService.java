@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.CreditCardLimit;
+import asa.com.bankbalanceanddispensingsystem.models.client.CreditCardLimit;
 
 public interface CreditCardLimitService {
     CreditCardLimit createCreditCardLimit (CreditCardLimit creditCardLimit);

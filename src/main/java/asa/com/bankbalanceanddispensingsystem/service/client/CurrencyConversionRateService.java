@@ -1,6 +1,6 @@
 package asa.com.bankbalanceanddispensingsystem.service.client;
 
-import asa.com.bankbalanceanddispensingsystem.model.client.CurrencyConversionRate;
+import asa.com.bankbalanceanddispensingsystem.models.client.CurrencyConversionRate;
 
 public interface CurrencyConversionRateService {
     CurrencyConversionRate createCurrencyConversionRate (
