@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class WithdrawDto {
+public class WithdrawRequestDto {
 
   private String atmName;
   private Integer clientId;
