@@ -5,4 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AtmAllocationRepository extends JpaRepository<AtmAllocation,Integer> {
 AtmAllocation findByDenominationId(Integer denominationId);
+AtmAllocation findByAtmIdAndDenominationId(Integer atmId, Integer denominationId);
 }

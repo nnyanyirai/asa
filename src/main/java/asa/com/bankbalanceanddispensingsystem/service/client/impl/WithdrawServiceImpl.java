@@ -100,10 +100,26 @@ public class WithdrawServiceImpl implements WithdrawService {
 
     double remaining = withdrawRequestDto.getAmount();
     Map<Integer,Integer> denominationValueCountMap = new HashMap<>();
+    System.out.println(denominations);
     for (Denomination denomination : denominations) {
-      //todo check if notes are enough
+      //check if notes are enough
+      AtmAllocation atmAllocation = atmAllocationRepository
+          .findByAtmIdAndDenominationId(atm.getAtmId(),denomination.getDenominationId());
+      if((atmAllocation.getCount() == 0)){
+        continue;
+      }
+
       int count = (int) remaining / denomination.getValue();
-      remaining = remaining % denomination.getValue();
+
+      if (!(atmAllocation.getCount() > count)){
+        count = atmAllocation.getCount();
+        remaining = remaining % denomination.getValue();
+        remaining+= (count*denomination.getValue());
+      }else {
+        remaining = remaining % denomination.getValue();
+      }
+      atmAllocation.setCount(atmAllocation.getCount() - count);
+      atmAllocationRepository.save(atmAllocation);
       System.out.println("inside " + remaining);
       denominationValueCountMap.put(denomination.getValue(), count);
     }
@@ -119,9 +135,6 @@ public class WithdrawServiceImpl implements WithdrawService {
     if (remaining!=0.0){
       throw new AsaException("Amount not available, would you like to draw " + nextAvailable);
     }
-
-    //todo update ATM allocation
-
     //update client account
     clientAccount.setDisplayBalance(
         BigDecimal.valueOf(Double.parseDouble(clientAccount.getDisplayBalance().toPlainString()) - withdrawRequestDto
