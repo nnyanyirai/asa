@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "2c575357-6e92-4a18-bf14-6a5456212c3e",
+		"name": "AfricaSoftwareAchitectsAss",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getDisplayCurrencyAccounts_with_convertedRandValues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/v1/getClientCurrencyAccountById/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"v1",
+						"getClientCurrencyAccountById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDisplayTransactionalAccounts_with_balances",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/v1/getClientAccountById/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"v1",
+						"getClientAccountById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "withdraw_calculation_of_notes_to_be_dispensed",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n    \"atmName\":\"SANDTON2\",\n    \"clientId\":\"2\",\n    \"accountNumber\":\"1018033450\",\n    \"amount\":1000\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/v1/withdrawCash",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"v1",
+						"withdrawCash"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
